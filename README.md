@@ -46,6 +46,10 @@ end user device (the phone).
 | Release asset | ATAK host |
 |---|---|
 | `PICKETCUAS-SNOOPY-2.0.0-ATAK5.5.1.apk` | ATAK-CIV 5.5.1.x |
+| `PICKETCUAS-SNOOPY-2.0.0-ATAK5.8.apk` | ATAK-CIV 5.8.x |
+
+Same plugin, same version: install the APK that matches your ATAK host (a plugin's
+API level must match the ATAK it runs on).
 
 The APK is built and signed by the **TAK Product Center third-party signing service**;
 ATAK shows the third-party-signed indicator for such plugins.
