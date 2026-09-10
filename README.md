@@ -33,6 +33,13 @@ end user device (the phone).
   deauthenticate, or interfere with any network. There is no active or offensive mode.
 - **Coordinates with the acoustic plugin**: when PICKET SWARM is streaming, SNOOPY
   eases its radios ("gentle mode") so the acoustic clock can stay in sync.
+- **SURVEY / SENTRY modes**: SURVEY maps every emitter to build the RF picture; SENTRY
+  watches for a new drone-signature emitter appearing near you and alerts on it.
+- **Cooperative vs non-cooperative calls**: paired with PICKET SWARM, SNOOPY correlates
+  SWARM's acoustic drone detection against decoded Remote ID and labels the track
+  COOPERATIVE (it is broadcasting Remote ID) or NON-COOPERATIVE (a drone that is silent).
+- **Drone-maker flagging**: emitters whose OUI (MAC manufacturer prefix) belongs to a
+  known drone maker (for example DJI) are flagged so drone-adjacent RF stands out.
 
 ## Supported ATAK versions
 
