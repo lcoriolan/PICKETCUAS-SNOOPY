@@ -143,8 +143,15 @@ Source-available under the **PolyForm Noncommercial License 1.0.0** for evaluati
 research, and personal use. Commercial or operational deployment requires a separate
 license. See the Releases page for the signed build.
 
+## RF fusion server
+
+A companion web-based **RF fusion server** lives in [`rf-fusion-server/`](./rf-fusion-server/): point
+several SNOOPY devices (or its `--demo`) at one server and it merges their Wi-Fi/BLE survey reports
+into a coherent picture, dedup across devices, coarse RSSI position, Remote ID aggregation, vendor
+lookup, and a live map. The advanced stages (precise localization, cooperative/non-cooperative
+correlation, the drone-maker list) are documented, empty extension points. See its README to run it.
+
 ## PICKET family
 
 - [PICKET SWARM](https://github.com/lcoriolan/PICKETCUAS-SWARM): acoustic detection ATAK plugin (classification, bearing, distributed array + CoHear).
 - [SWARM-DEVICE-AGNOSTIC](https://github.com/lcoriolan/SWARM-DEVICE-AGNOSTIC): web-based acoustic reference; any browser is a sensor node.
-- [SNOOPY-RF-FUSION](https://github.com/lcoriolan/SNOOPY-RF-FUSION): web-based RF fusion server, the server side for SNOOPY's survey reports.

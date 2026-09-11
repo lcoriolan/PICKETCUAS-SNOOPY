@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- PROJECT: SNOOPY-RF-FUSION (web reference) | CREATED: 2026-09-10 -->
+<!-- DESCRIPTION: Live viewer for the fused RF picture. This is the VIEW; the sensing is done by
+     SNOOPY survey devices that POST observations to /observe (a browser cannot passively scan
+     Wi-Fi/BLE). Self-contained, no external scripts or styles. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SNOOPY RF fusion</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <h1>SNOOPY <span class="dim">RF fusion picture</span></h1>
+  <p class="note">Passive Wi-Fi/BLE survey devices stream their observations to one server, which
+  merges them across devices into a coherent picture. This page is the live view. A browser cannot
+  scan RF itself, so the sensing is done by SNOOPY devices (or any client POSTing the observation
+  JSON to <code>/observe</code>). Run the server with <code>--demo</code> to populate it.</p>
+</header>
+
+<main>
+  <section id="pic">
+    <h2>Map <span id="summary" class="dim"></span></h2>
+    <canvas id="map" width="540" height="540"></canvas>
+    <p class="note"><span class="k node">node</span> survey device &nbsp;
+      <span class="k wifi">wifi</span> &nbsp; <span class="k ble">ble</span> &nbsp;
+      <span class="k drone">drone-flagged</span> &nbsp; <span class="k rid">Remote ID drone</span></p>
+  </section>
+  <section id="list">
+    <h2>Emitters</h2>
+    <div id="stages" class="note"></div>
+    <table id="tbl"><thead><tr><th>MAC</th><th>band</th><th>vendor</th><th>ssid / type</th>
+      <th>rssi</th><th>nodes</th><th>flag</th></tr></thead><tbody></tbody></table>
+  </section>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

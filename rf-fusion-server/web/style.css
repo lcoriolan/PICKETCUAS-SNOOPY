@@ -1,0 +1,24 @@
+/* PROJECT: SNOOPY-RF-FUSION (web reference) | CREATED: 2026-09-10
+   DESCRIPTION: Minimal dark theme for the RF fusion viewer. No external fonts or assets. */
+:root { --bg:#0d1418; --panel:#131e25; --edge:#22303a; --ink:#d7e2e8; --dim:#7f97a5; --amber:#ffb020; --cyan:#6fd3ff; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.5 system-ui, sans-serif; }
+header { padding:18px 22px; border-bottom:1px solid var(--edge); }
+h1 { margin:0 0 4px; font-size:20px; font-weight:650; }
+h2 { margin:0 0 12px; font-size:15px; }
+.dim { color:var(--dim); font-weight:400; font-size:12px; }
+.note { color:var(--dim); font-size:12px; max-width:64ch; }
+code { color:var(--cyan); }
+main { display:flex; flex-wrap:wrap; gap:18px; padding:18px 22px; }
+section { background:var(--panel); border:1px solid var(--edge); border-radius:10px; padding:16px; }
+#pic { flex:1 1 540px; }
+#list { flex:1 1 420px; }
+canvas { background:#0b1216; border:1px solid var(--edge); border-radius:8px; max-width:100%; }
+table { width:100%; border-collapse:collapse; font-size:12px; margin-top:8px; }
+th, td { text-align:left; padding:4px 8px; border-bottom:1px solid var(--edge); }
+th { color:var(--dim); font-weight:600; }
+td.mac { font-family:ui-monospace, monospace; color:var(--cyan); }
+tr.flag td { color:#ffb0b0; }
+.k { display:inline-block; padding:1px 7px; border-radius:5px; font-size:11px; color:#0d1418; }
+.k.node{background:#6fd3ff;} .k.wifi{background:#8fd0ff;} .k.ble{background:#67c7b0;}
+.k.drone{background:#ff5d5d;} .k.rid{background:#ffb020;}
