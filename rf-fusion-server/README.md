@@ -74,5 +74,5 @@ family.
 
 ## License
 
-Licensed under the **Apache License 2.0** (see `LICENSE`), free and open for any use, including
-commercial.
+Source-available under the **PolyForm Noncommercial License 1.0.0** (see `LICENSE`) for
+noncommercial use; commercial or operational deployment requires a separate license.
