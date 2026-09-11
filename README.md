@@ -125,13 +125,13 @@ wedge once enough signal-strength history exists.
 ## Free version vs. production
 
 This is the **free version** and it is useful on its own: a passive RF survey, drone
-Remote ID on the map, and OUI vendor typing, free for noncommercial use. The production
+Remote ID on the map, and OUI vendor typing, open source under Apache-2.0. The production
 PICKET stack is a large step up in sensitivity, decode breadth, multi-node localization,
 and robustness.
 
 | Capability | Free (this plugin) | Production PICKET |
 |---|---|---|
-| **Use / license** | Noncommercial: evaluation, research, personal (PolyForm Noncommercial) | Commercial & operational deployment (licensed) |
+| **Use / license** | Open source, Apache-2.0 (commercial use OK) | Commercial license for the production engine |
 | **Passive RF survey** | Yes | Yes, wider bearer and band coverage |
 | **Drone Remote ID** | Yes: ASTM F3411 over Android bearers | Yes: expanded decode + fusion correlation |
 | **Non-cooperative localization** | Coarse single-phone RSSI estimate | Multi-node localization and tracking |
@@ -139,9 +139,8 @@ and robustness.
 
 ## License
 
-Source-available under the **PolyForm Noncommercial License 1.0.0** for evaluation,
-research, and personal use. Commercial or operational deployment requires a separate
-license. See the Releases page for the signed build.
+Licensed under the **Apache License 2.0** (see `LICENSE`), free and open for any use, including
+commercial. See the Releases page for the signed build.
 
 ## RF fusion server
 
