@@ -142,3 +142,9 @@ and robustness.
 Source-available under the **PolyForm Noncommercial License 1.0.0** for evaluation,
 research, and personal use. Commercial or operational deployment requires a separate
 license. See the Releases page for the signed build.
+
+## PICKET family
+
+- [PICKET SWARM](https://github.com/lcoriolan/PICKETCUAS-SWARM): acoustic detection ATAK plugin (classification, bearing, distributed array + CoHear).
+- [SWARM-DEVICE-AGNOSTIC](https://github.com/lcoriolan/SWARM-DEVICE-AGNOSTIC): web-based acoustic reference; any browser is a sensor node.
+- [SNOOPY-RF-FUSION](https://github.com/lcoriolan/SNOOPY-RF-FUSION): web-based RF fusion server, the server side for SNOOPY's survey reports.
