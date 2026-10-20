@@ -40,19 +40,26 @@ end user device (the phone).
   COOPERATIVE (it is broadcasting Remote ID) or NON-COOPERATIVE (a drone that is silent).
 - **Drone-maker flagging**: emitters whose OUI (MAC manufacturer prefix) belongs to a
   known drone maker (for example DJI) are flagged so drone-adjacent RF stands out.
+- **External SDR reception (2.1.0)**: RTL-SDR through `rtl_tcp` (an on-phone driver
+  app or companion server), and HackRF One through USB-OTG. These backends are
+  receive-only; testing with physical RTL-SDR/HackRF hardware remains pending.
 
 ## Supported ATAK versions
 
+**Current release: [PICKET SNOOPY 2.1.0](https://github.com/lcoriolan/PICKETCUAS-SNOOPY/releases/tag/v2.1.0).**
+
 | Release asset | ATAK host |
 |---|---|
-| `PICKETCUAS-SNOOPY-2.0.0-ATAK5.5.1.apk` | ATAK-CIV 5.5.1.x |
-| `PICKETCUAS-SNOOPY-2.0.0-ATAK5.8.apk` | ATAK-CIV 5.8.x |
+| [PICKETCUAS-SNOOPY-2.1.0-atak5.5.1-civ-release.apk](https://github.com/lcoriolan/PICKETCUAS-SNOOPY/releases/download/v2.1.0/PICKETCUAS-SNOOPY-2.1.0-atak5.5.1-civ-release.apk) | ATAK-CIV 5.5.1.x |
+| [PICKETCUAS-SNOOPY-2.1.0-atak5.6.0-civ-release.apk](https://github.com/lcoriolan/PICKETCUAS-SNOOPY/releases/download/v2.1.0/PICKETCUAS-SNOOPY-2.1.0-atak5.6.0-civ-release.apk) | ATAK-CIV 5.6.0.x |
+| [PICKETCUAS-SNOOPY-2.1.0-atak5.8.0-civ-release.apk](https://github.com/lcoriolan/PICKETCUAS-SNOOPY/releases/download/v2.1.0/PICKETCUAS-SNOOPY-2.1.0-atak5.8.0-civ-release.apk) | ATAK-CIV 5.8.0.x |
 
 Same plugin, same version: install the APK that matches your ATAK host (a plugin's
 API level must match the ATAK it runs on).
 
 The APK is built and signed by the **TAK Product Center third-party signing service**;
 ATAK shows the third-party-signed indicator for such plugins.
+The release includes `SHA256SUMS.txt` for all three APKs.
 
 ## Install: getting SNOOPY onto your device
 
@@ -117,8 +124,10 @@ wedge once enough signal-strength history exists.
   or take any action against a radio. It is situational awareness, not an effector.
 - **Non-cooperative position is coarse.** Only Remote ID gives an exact fix. Everything
   else is a signal-strength estimate and is displayed with its uncertainty.
-- **What the phone can hear is the ceiling.** Coverage depends on the phone's radios
-  and Android's scan throttling; SNOOPY surfaces what the OS exposes, no more.
+- **Reception depends on the hardware.** Phone-only coverage depends on the phone's
+  radios and Android's scan throttling. Optional SDR reception depends on the
+  attached receiver, antenna, driver, and configured bands; physical SDR hardware
+  testing for 2.1.0 remains pending.
 - **Legal use is your responsibility.** Passively receiving is broadly permissible in
   many places, but rules vary. Operate within the law and policy for your location.
 
